@@ -6,12 +6,11 @@ import styled from "styled-components";
 
 // import components
 
-const CharacterList = () => {
+const CharacterList = (props) => {
     const [characters, setCharacters] = useState([]);
-    const [page, setPage] = useState([]);
 
 	useEffect(() => {
-		axios.get(`https://swapi.co/api/people/`)
+		axios.get(`https://swapi.co/api/people/?page=${props.page}`)
 			.then(response => {
                 setCharacters(response.data.results);
                 console.log(response.data.results.name);
@@ -20,7 +19,7 @@ const CharacterList = () => {
 				console.log(error);
 			});
 
-    }, []);
+    }, [props.page]);
     const Container = styled.div`
         background: #8db4ca;
         /* width: 100%; */
