@@ -25,15 +25,15 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+<!-- React js is a javascript library that allows developers to build web applications by breaking every thing into whats called react components. At its core, react solves the problem of slow DOM rendeer by a concept called virtual DOM. When a page is rendered using React, the state of the DOM tree structure/hierarchy is stored, and when there any updates to be made to the UI, it does a diff on the previous (old) DOM tree with the new one, and updates only the ones that have changed. In this way, lots of DOM operations/refreshes are reduced, improving performance considerably.-->
 - [ ] What does it mean to _think_ in react?
-
+<!-- Thinking in react is about being able to break down an application in components. -->
 - [ ] Describe state.
-
+<!-- State is the phenomenon of watching for changes and how those changes will be rendered on the screen. -->
 - [ ] Describe props.
-
+<!-- Props is the idea of passing down data defined in parents componets to child componets so that it cna be used in that components as well. -->
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+<!-- By using this Hook, we can tell React that our component needs to do something after render. React will remember the function we passed and call it later after performing the DOM updates. We can pass our props data or state into the dependecy array and sync the desired effect we want.-->
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
